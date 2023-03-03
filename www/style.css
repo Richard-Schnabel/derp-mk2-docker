@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Caveat;
+    src: url(https://fonts.gstatic.com/s/caveat/v17/Wnz6HAc5bAfYB2Q7ZjYY.woff2);
+}
+:root {
+    --svetle_modra: #e3ebff;
+    --svetle_modra2: #cfdffc80;
+    --tmave_modra: #111144;
+    --svete_seda: #666666;
+    --oranzova: #ffaa00;
+    --zelena: #009f09;
+    --gradient_start: #cfdffc;
+    --gradient_end: #3b6fca;
+}
+
+
+body {
+    margin: 0px;
+    color: var(--tmave_modra);
+    font-family: Arial;
+    background-color: var(--gradient_end);
+}
+
+.table1 {
+    color: white;
+    width: 75%;
+    border-collapse: collapse;
+    margin: auto;
+}
+.table1 th {
+    text-align: left;
+    border: black 1px solid;
+    max-width: 500px;
+    background-color: #202020;
+    font-weight: bold;
+}
+.table1 td {
+    text-align: left;
+    border: black 1px solid;
+    max-width: 500px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+th a {
+    color: white;
+}
+/* nove */
+header {
+    color: var(--tmave_modra);
+    text-align: center;
+    width: calc(100%-10px);
+    background-image: url(res/header_bg.jpeg);
+    background-size: auto 100%;
+    padding: 10px;
+}
+h1 {
+    font-family: Caveat;
+    font-size: 100px;
+    margin: 0px;
+}
+h2 {
+    font-family: Caveat;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.cerna_cara {
+    background-color: var(--svete_seda);
+    height: 3px;
+}
+
+main {
+    width: calc(100%-20px);
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 69px;
+}
+
+.gradientBG {
+    background: linear-gradient(0deg, var(--gradient_end) 0%, var(--gradient_start) 100%);
+}
+
+.div_ramecek {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    background-color: var(--svetle_modra);
+    display: flex;
+    top: -25px;
+    position: relative;
+}
+
+.div_text {
+    font-family: Caveat;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.round_malo {
+    border-radius: 10px;
+    border: 3px solid var(--tmave_modra);
+}
+
+.round_hodne {
+    border-radius: 50px;
+    border: 3px solid var(--tmave_modra);
+}
+
+.div_pravo {
+    float: right;
+}
+
+.div_levo {
+    float: left;
+}
+
+article {
+    margin: 20px;
+    background-color: var(--svetle_modra2);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.users {
+    background-color: var(--svetle_modra);
+    color: var(--tmave_modra);
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.zaznam {
+    background-color: var(--svetle_modra);
+    color: var(--tmave_modra);
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+    .zaznam td:nth-child(2) {
+        text-align: right;
+    }
+    .zaznam tr:nth-child(2) td:nth-child(1), .zaznam tr:nth-child(3) td:nth-child(2) {
+        font-size: 30px;
+    }
+
+.edit {
+    border: 3px solid var(--oranzova);
+}
+
+#add_new {
+    border: 3px solid var(--zelena);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+select {
+    background-color: var(--oranzova);
+    border-radius: 10px;
+    border: 3px solid var(--tmave_modra);
+}
+
+.login {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+    .login form {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    }
+.usertable {    
+}
+    .usertable tr {
+        border-radius: 10px;
+        outline: 3px solid var(--tmave_modra);
+        background-color: var(--svetle_modra);
+        color: var(--tmave_modra);
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .usertable td,th {
+        padding: 10px;
+    }
